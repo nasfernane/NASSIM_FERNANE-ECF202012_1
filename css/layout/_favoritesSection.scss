@@ -20,6 +20,7 @@
             width: 55rem;
             height: 35rem;
             position: absolute;
+            box-shadow: 4px 4px 20px $color-dark-blue;
 
             &:nth-child(1) {
                 bottom: 0;
@@ -37,6 +38,15 @@
                 top: 0;
                 left: 0;
                 z-index: 1;
+            }
+            &:hover {
+                background: $color-light-grey;
+                box-shadow: 0 0 0;
+                width: 66rem;
+                height: 42rem;
+                padding: 1rem;
+                z-index: 99;
+                border: 4px solid $color-dark-blue;
             }
         }
     }
