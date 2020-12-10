@@ -1,8 +1,43 @@
 .favorites {
     background: $color-light-grey;
-    height: 100vh;
+    height: 80vh;
     padding-top: 5vh;
+    text-align: center;
+
     h2 {
-        
+        font-size: 3rem;
+        text-align: center;
+        margin-bottom: 5rem;
+    }
+
+    &__display-box {
+        width: 60%;
+        height: 80%;
+        position: relative;
+        margin: 0 auto;
+
+        &--img {
+            width: 55rem;
+            height: 35rem;
+            position: absolute;
+
+            &:nth-child(1) {
+                bottom: 0;
+                left: 20%;
+                z-index: 3;
+            }
+
+            &:nth-child(2) {
+                top: 15%;
+                right: 0;
+                z-index: 2;
+            }
+
+            &:nth-child(3) {
+                top: 0;
+                left: 0;
+                z-index: 1;
+            }
+        }
     }
 }

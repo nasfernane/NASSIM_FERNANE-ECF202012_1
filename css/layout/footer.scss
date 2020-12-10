@@ -1,0 +1,35 @@
+.footer {
+    height: 30vh;
+    text-align: center;
+
+    img {
+        height: 20rem;
+    }
+
+    ul {
+        list-style-type: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 70%;
+        margin: 0 auto;
+        font-size: 2rem;
+
+        li a {
+            text-decoration: none;
+            text-transform: uppercase;
+
+            &:active,
+            &:link,
+            &:visited {
+                color: $color-dark-blue;
+                letter-spacing: 0.4rem;
+            }
+
+            &:hover {
+                font-weight: 600;
+                text-decoration: underline;
+            }
+        }
+    }
+}

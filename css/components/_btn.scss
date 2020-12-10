@@ -1,0 +1,57 @@
+.btn {
+    // formate le bouton
+    &:link,
+    &:visited {
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 1.5rem 4rem;
+        display: inline-block;
+        border-radius: 100px;
+        transition: all 0.2s;
+        position: relative;
+        font-size: 1.6rem;
+    }
+
+    &:hover {
+        // effet de profondeur
+        transform: translateY(-3px);
+        box-shadow: 0 10px 20px rgba($color-black, 0.2);
+
+        // expansion
+        &::after {
+            transform: scaleX(1.4) scaleY(1.7);
+            opacity: 0;
+        }
+    }
+
+    &:active {
+        // effet de pression sur le bouton au clic
+        transform: translateY(-1px);
+        box-shadow: 0 5px 10px rgba($color-dark-blue, 0.2);
+    }
+
+    &--blue {
+        background-color: $color-light-blue;
+        color: $color-light-grey;
+        margin-top: 2rem;
+    
+        &::after {
+            background-color: $color-light-blue;
+        }
+    }
+
+    // effet d'expansion
+    &::after {
+        content: '';
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+        border-radius: 100px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        transition: all 0.4s ease-out;
+    }
+
+}

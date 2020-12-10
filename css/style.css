@@ -33,13 +33,15 @@ html {
 
 body {
   box-sizing: border-box;
-  background: #efe9f4; }
+  background: #efe9f4;
+  font-weight: 400; }
 
 body {
   font-family: 'Do Hyeon', sans-serif;
   font-weight: 400;
   line-height: 1.7;
-  padding: 3rem; }
+  padding: 3rem;
+  color: #283048; }
 
 .heading-primary {
   color: #efe9f4;
@@ -62,6 +64,68 @@ body {
     animation-duration: 1s;
     animation: moveInRight 1s ease-out; }
 
+.btn:link, .btn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1.5rem 4rem;
+  display: inline-block;
+  border-radius: 100px;
+  transition: all 0.2s;
+  position: relative;
+  font-size: 1.6rem; }
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); }
+  .btn:hover::after {
+    transform: scaleX(1.4) scaleY(1.7);
+    opacity: 0; }
+
+.btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(40, 48, 72, 0.2); }
+
+.btn--blue {
+  background-color: #859398;
+  color: #efe9f4;
+  margin-top: 2rem; }
+  .btn--blue::after {
+    background-color: #859398; }
+
+.btn::after {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.4s ease-out; }
+
+.albums {
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+  height: 50%;
+  margin: 0 auto;
+  margin-top: 5rem;
+  flex-wrap: wrap; }
+  .albums__card {
+    width: 20%;
+    height: 80%;
+    border: 1px solid #efe9f4;
+    border-radius: 16px;
+    text-align: left; }
+    .albums__card img {
+      border-radius: 16px 16px 0 0; }
+    .albums__card h5 {
+      font-size: 1.5rem; }
+    .albums__card audio {
+      width: 100%;
+      height: 3rem; }
+
 .header {
   position: relative;
   height: 95vh;
@@ -69,13 +133,13 @@ body {
   background-size: cover;
   background-position: top;
   /* clip path décrit chaque mouvement du polygone en partant à chaque fois du top left */
-  clip-path: polygon(0 0, 100% 0, 100% 70vh, 0 100%); }
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); }
   .header__logo-box {
     position: absolute;
     top: 4rem;
     left: 4rem; }
   .header__logo {
-    height: 8rem; }
+    height: 15rem; }
   .header__text-box {
     position: absolute;
     top: 40%;
@@ -85,5 +149,102 @@ body {
 
 .favorites {
   background: #efe9f4;
-  height: 100vh;
-  padding-top: 5vh; }
+  height: 80vh;
+  padding-top: 5vh;
+  text-align: center; }
+  .favorites h2 {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 5rem; }
+  .favorites__display-box {
+    width: 60%;
+    height: 80%;
+    position: relative;
+    margin: 0 auto; }
+    .favorites__display-box--img {
+      width: 55rem;
+      height: 35rem;
+      position: absolute; }
+      .favorites__display-box--img:nth-child(1) {
+        bottom: 0;
+        left: 20%;
+        z-index: 3; }
+      .favorites__display-box--img:nth-child(2) {
+        top: 15%;
+        right: 0;
+        z-index: 2; }
+      .favorites__display-box--img:nth-child(3) {
+        top: 0;
+        left: 0;
+        z-index: 1; }
+
+.search {
+  height: 120vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-top: 20rem;
+  margin-top: 5rem;
+  background-image: linear-gradient(to right bottom, rgba(239, 233, 244, 0.8), rgba(40, 48, 72, 0.8));
+  background-size: cover;
+  background-position: top;
+  clip-path: polygon(0 25%, 100% 0, 100% 75%, 0 100%); }
+  .search h2 {
+    font-size: 3rem; }
+  .search h3 {
+    font-size: 2.5rem; }
+  .search .search-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 5rem; }
+    .search .search-box__input {
+      padding-left: 1rem;
+      font-size: 2rem;
+      color: #283048;
+      height: 5rem;
+      width: 30rem;
+      border-radius: 1rem;
+      border: 1px solid #283048;
+      background-color: #efe9f4; }
+    .search .search-box__deezer-button {
+      height: 10rem;
+      width: 10rem;
+      border-radius: 50%;
+      background: url("../img/logoDeezer.png") center;
+      background-size: cover;
+      border: 0; }
+    .search .search-box__soon {
+      border: 1px solid #283048;
+      border-radius: 8px;
+      padding: 10px;
+      width: 30%; }
+      .search .search-box__soon--players {
+        display: flex;
+        justify-content: space-around; }
+
+.footer {
+  height: 30vh;
+  text-align: center; }
+  .footer img {
+    height: 20rem; }
+  .footer ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    margin: 0 auto;
+    font-size: 2rem; }
+    .footer ul li a {
+      text-decoration: none;
+      text-transform: uppercase; }
+      .footer ul li a:active, .footer ul li a:link, .footer ul li a:visited {
+        color: #283048;
+        letter-spacing: 0.4rem; }
+      .footer ul li a:hover {
+        font-weight: 600;
+        text-decoration: underline; }

@@ -4,6 +4,15 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>My Music</title>
+
+        <!-- link CSS bootstrap pour les cards deezer -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+            crossorigin="anonymous"
+        />
+        <!-- css principal -->
         <link rel="stylesheet" href="css/style.css" />
     </head>
     <body>
@@ -27,19 +36,47 @@
         <section class="favorites">
             <h2>Retrouvez vos artistes favoris</h2>
             <div class="favorites__display-box">
-                <img src="img/theBadPlus.jpg" alt="The Bad Plus" />
-                <img src="img/sonsOfKemet.jpg" alt="Sons of Kemet" />
-                <img src="img/tromboneShorty.jpg" alt="Trombone Shorty" />
+                <img
+                    class="favorites__display-box--img"
+                    src="img/theBadPlus.jpg"
+                    alt="The Bad Plus"
+                />
+                <img
+                    class="favorites__display-box--img"
+                    src="img/sonsOfKemet.jpg"
+                    alt="Sons of Kemet"
+                />
+                <img
+                    class="favorites__display-box--img"
+                    src="img/tromboneShorty.jpg"
+                    alt="Trombone Shorty"
+                />
             </div>
-            <button class="favorites__button"></button>
+            <a href="#" class="btn btn--blue">Voir tous vos favoris</a>
         </section>
 
         <section class="search">
+            <h2>Recherchez un artiste</h2>
+            <h3>
+                et accédez à ses albums, ses dernières sorties et plus encore
+            </h3>
             <div class="search-box">
-                <input type="text class=" class="search-box__input" />
+                <input
+                    type="text"
+                    class="search-box__input"
+                    placeholder="Ex: The Bad Plus"
+                />
                 <button class="search-box__deezer-button"></button>
-                <div class="search-box__soon"></div>
+                <div class="search-box__soon">
+                    <h2>Bientôt diponibles</h2>
+                    <div class="search-box__soon--players">
+                        <img src="img/spotify.png" alt="Spotify" />
+                        <img src="img/musicBrainz.png" alt="Music Brainz" />
+                        <img src="img/tuneIn.png" alt="Tune In" />
+                    </div>
+                </div>
             </div>
+            <div class="albums"></div>
         </section>
 
         <footer class="footer">
@@ -52,5 +89,10 @@
                 <li><a href="#">Contact</a></li>
             </ul>
         </footer>
+
+        <!-- script jsonp pour faciliter le fetch sur Deezer -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fetch-jsonp/1.1.1/fetch-jsonp.js"></script>
+        <!-- Script principal -->
+        <script src="javascript/main.js"></script>
     </body>
 </html>

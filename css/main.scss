@@ -7,8 +7,10 @@
 @import 'base/typography';
 @import 'base/utilities';
 
+@import 'components/btn';
+@import 'components/albums';
+
 @import 'layout/header.scss';
 @import 'layout/favoritesSection.scss';
 @import 'layout/searchSection.scss';
 @import 'layout/footer.scss';
-
