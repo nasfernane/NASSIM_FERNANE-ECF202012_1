@@ -1,9 +1,8 @@
-// font-family: 'Do Hyeon', sans-serif;
-// font-family: 'East Sea Dokdo', cursive;
-@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&family=East+Sea+Dokdo&display=swap');
+// font-family: 'Reem Kufi', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Reem+Kufi&display=swap');
 
 body {
-    font-family: 'Do Hyeon', sans-serif;
+    font-family: 'Reem Kufi', sans-serif;
     font-weight: 400;
     line-height: 1.7;
     padding: 3rem;
@@ -16,7 +15,8 @@ body {
     /* fixe le shake de l'animation */
     backface-visibility: hidden;
     margin-bottom: 6rem;
-    font-family: 'East Sea Dokdo', cursive;
+    font-family: 'Reem Kufi', sans-serif;
+    font-variant: small-caps;
 
     &--main {
         display: block;
@@ -30,7 +30,7 @@ body {
         display: block;
         font-size: 4rem;
         font-weight: 800;
-        letter-spacing: 1.12rem;
+        letter-spacing: 1.4rem;
         animation-name: moveInRight;
         animation-duration: 1s;
         animation: moveInRight 1s ease-out;

@@ -187,7 +187,7 @@
     },
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "scss": "node-sass css/main.scss css/style.css -w"
+        "scss": "node-sass sass/main.scss sass/style.css -w"
     },
     "author": "Nassim",
     "license": "ISC"

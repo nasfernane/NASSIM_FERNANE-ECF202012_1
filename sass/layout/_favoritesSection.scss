@@ -15,12 +15,14 @@
         height: 80%;
         position: relative;
         margin: 0 auto;
+        margin-bottom: 4rem;
 
         &--img {
             width: 55rem;
             height: 35rem;
             position: absolute;
             box-shadow: 4px 4px 20px $color-dark-blue;
+            transition: all 0.3s ease-out;
 
             &:nth-child(1) {
                 bottom: 0;
@@ -41,12 +43,10 @@
             }
             &:hover {
                 background: $color-light-grey;
-                box-shadow: 0 0 0;
                 width: 66rem;
                 height: 42rem;
-                padding: 1rem;
+                padding: 0.5rem;
                 z-index: 99;
-                border: 4px solid $color-dark-blue;
             }
         }
     }

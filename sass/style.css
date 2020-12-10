@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Do+Hyeon&family=East+Sea+Dokdo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Reem+Kufi&display=swap");
 @keyframes moveInLeft {
   0% {
     opacity: 0;
@@ -37,7 +37,7 @@ body {
   font-weight: 400; }
 
 body {
-  font-family: 'Do Hyeon', sans-serif;
+  font-family: 'Reem Kufi', sans-serif;
   font-weight: 400;
   line-height: 1.7;
   padding: 3rem;
@@ -48,7 +48,8 @@ body {
   /* fixe le shake de l'animation */
   backface-visibility: hidden;
   margin-bottom: 6rem;
-  font-family: 'East Sea Dokdo', cursive; }
+  font-family: 'Reem Kufi', sans-serif;
+  font-variant: small-caps; }
   .heading-primary--main {
     display: block;
     font-size: 9rem;
@@ -59,7 +60,7 @@ body {
     display: block;
     font-size: 4rem;
     font-weight: 800;
-    letter-spacing: 1.12rem;
+    letter-spacing: 1.4rem;
     animation-name: moveInRight;
     animation-duration: 1s;
     animation: moveInRight 1s ease-out; }
@@ -160,12 +161,14 @@ body {
     width: 60%;
     height: 80%;
     position: relative;
-    margin: 0 auto; }
+    margin: 0 auto;
+    margin-bottom: 4rem; }
     .favorites__display-box--img {
       width: 55rem;
       height: 35rem;
       position: absolute;
-      box-shadow: 4px 4px 20px #283048; }
+      box-shadow: 4px 4px 20px #283048;
+      transition: all 0.3s ease-out; }
       .favorites__display-box--img:nth-child(1) {
         bottom: 0;
         left: 20%;
@@ -180,12 +183,10 @@ body {
         z-index: 1; }
       .favorites__display-box--img:hover {
         background: #efe9f4;
-        box-shadow: 0 0 0;
         width: 66rem;
         height: 42rem;
-        padding: 1rem;
-        z-index: 99;
-        border: 4px solid #283048; }
+        padding: 0.5rem;
+        z-index: 99; }
 
 .search {
   height: 120vh;

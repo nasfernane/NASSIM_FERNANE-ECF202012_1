@@ -33,54 +33,50 @@
             </div>
         </header>
 
-        <!-- Première section, display sommaires des artistes favoris  -->
-        <section class="favorites">
-            <h2>Retrouvez vos artistes favoris</h2>
-            <div class="favorites__display-box">
-                <img
-                    class="favorites__display-box--img"
-                    src="img/theBadPlus.jpg"
-                    alt="The Bad Plus"
-                />
-                <img
-                    class="favorites__display-box--img"
-                    src="img/sonsOfKemet.jpg"
-                    alt="Sons of Kemet"
-                />
-                <img
-                    class="favorites__display-box--img"
-                    src="img/tromboneShorty.jpg"
-                    alt="Trombone Shorty"
-                />
-            </div>
-            <a href="favorites.html" class="btn btn--blue"
-                >Voir tous vos favoris</a
-            >
-        </section>
+        <section class="biography">
+            <h2>Vos favoris</h2>
 
-        <!-- Deuxième section, outil de recherche d'un nouveal artiste et affichage par API deezer -->
-        <section class="search">
-            <h2>Recherchez un artiste</h2>
-            <h3>
-                et accédez à ses albums, ses dernières sorties et plus encore
-            </h3>
-            <div class="search-box">
-                <input
-                    type="text"
-                    class="search-box__input"
-                    placeholder="Ex: The Bad Plus"
-                />
-                <button class="search-box__deezer-button"></button>
-                <div class="search-box__soon">
-                    <h2>Bientôt diponibles</h2>
-                    <div class="search-box__soon--players">
-                        <img src="img/spotify.png" alt="Spotify" />
-                        <img src="img/musicBrainz.png" alt="Music Brainz" />
-                        <img src="img/tuneIn.png" alt="Tune In" />
-                    </div>
+            <div class="displayBiography">
+                <div class="displayBiography__favorites">
+                    <p class="favorites--theBadPlus">The Bad Plus</p>
+                    <p class="favorites--snarkyPuppy">Snarky Puppy</p>
+                    <p class="favorites--tromboneShorty">Trombone Shorty</p>
+                    <p class="favorites--sonsOfKemet">Sons of Kemet</p>
+                </div>
+                <aside class="displayBiography__bandPicture">
+                    <img src="img/theBadPlusBio.jpg" alt="The Bad Plus" />
+                    <h3>The Bad Plus</h3>
+                </aside>
+                <article class="displayBiography__biography">
+                    <p>
+                        Si les trois musiciens jouent pour la première fois
+                        ensemble en 1989, ils ne forment un véritable groupe
+                        qu’en 2000. En 2002, après avoir joué au Village
+                        Vanguard, le groupe signe chez l’éditeur Columbia, qui
+                        publie les albums These Are The Vistas (2003), Give
+                        (2004) et enfin Suspicious Activity ? (2005). En 2007,
+                        ils quittent Columbia pour Heads Up Records, et sortent
+                        l'album Prog en juin 2007.
+                    </p>
+                </article>
+            </div>
+        </section>
+        <section class="concerts">
+            <h2>Concerts prévus</h2>
+            <div class="concerts__dates">
+                <div>
+                    <h3>The Bad plus</h3>
+                </div>
+                <div>
+                    <h3>Snarky Puppy</h3>
+                </div>
+                <div>
+                    <h3>Trombone Shorty</h3>
+                </div>
+                <div>
+                    <h3>Sons of Kemet</h3>
                 </div>
             </div>
-            <div class="albums"></div>
         </section>
 
         <footer class="footer">
