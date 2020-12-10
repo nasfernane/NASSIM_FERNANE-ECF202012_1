@@ -1,11 +1,14 @@
-@import "abstract/functions";
-@import "abstract/mixins";
-@import "abstract/variables";
+@import 'abstract/functions';
+@import 'abstract/mixins';
+@import 'abstract/variables';
 
-@import "base/animations";
-@import "base/base";
-@import "base/typography";
-@import "base/utilities";
+@import 'base/animations';
+@import 'base/base';
+@import 'base/typography';
+@import 'base/utilities';
 
+@import 'layout/header.scss';
+@import 'layout/favoritesSection.scss';
+@import 'layout/searchSection.scss';
+@import 'layout/footer.scss';
 
-// @import "layout/header.scss";

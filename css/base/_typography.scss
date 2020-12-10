@@ -1,2 +1,37 @@
 // font-family: 'Do Hyeon', sans-serif;
+// font-family: 'East Sea Dokdo', cursive;
 @import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&family=East+Sea+Dokdo&display=swap');
+
+body {
+    font-family: 'Do Hyeon', sans-serif;
+    font-weight: 400;
+    line-height: 1.7;
+    padding: 3rem;
+}
+
+.heading-primary {
+    color: $color-light-grey;
+    // text-transform: uppercase;
+    /* fixe le shake de l'animation */
+    backface-visibility: hidden;
+    margin-bottom: 6rem;
+    font-family: 'East Sea Dokdo', cursive;
+
+    &--main {
+        display: block;
+        font-size: 9rem;
+        font-weight: 500;
+        letter-spacing: 2.5rem;
+        animation: moveInLeft 1s ease-out;
+    }
+
+    &--sub {
+        display: block;
+        font-size: 4rem;
+        font-weight: 800;
+        letter-spacing: 1.12rem;
+        animation-name: moveInRight;
+        animation-duration: 1s;
+        animation: moveInRight 1s ease-out;
+    }
+}

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,6 +7,50 @@
         <link rel="stylesheet" href="css/style.css" />
     </head>
     <body>
-    <p>coucou</p>
+        <!-- Header/landing page avec un logo top left et un titre/punch line -->
+        <header class="header">
+            <div class="header__logo-box">
+                <img
+                    src="img/logoWhite.png"
+                    alt="logo white"
+                    class="header__logo"
+                />
+            </div>
+            <div class="header__text-box">
+                <h1 class="heading-primary">
+                    <span class="heading-primary--main">My Music</span>
+                    <span class="heading-primary--sub">Anytime, Anywhere</span>
+                </h1>
+            </div>
+        </header>
+
+        <section class="favorites">
+            <h2>Retrouvez vos artistes favoris</h2>
+            <div class="favorites__display-box">
+                <img src="img/theBadPlus.jpg" alt="The Bad Plus" />
+                <img src="img/sonsOfKemet.jpg" alt="Sons of Kemet" />
+                <img src="img/tromboneShorty.jpg" alt="Trombone Shorty" />
+            </div>
+            <button class="favorites__button"></button>
+        </section>
+
+        <section class="search">
+            <div class="search-box">
+                <input type="text class=" class="search-box__input" />
+                <button class="search-box__deezer-button"></button>
+                <div class="search-box__soon"></div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <img src="img/logoDark.png" alt="Logo" />
+            <ul>
+                <li><a href="#">A propos</a></li>
+                <li><a href="#">Liens</a></li>
+                <li><a href="#">Partenaires</a></li>
+                <li><a href="#">Support</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </footer>
     </body>
 </html>

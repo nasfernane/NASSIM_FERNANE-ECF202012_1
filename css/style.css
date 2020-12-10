@@ -1,0 +1,89 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Do+Hyeon&family=East+Sea+Dokdo&display=swap");
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px); }
+  80% {
+    transform: translateX(10px); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem); }
+  80% {
+    transform: translateX(-1rem); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+
+/* css global reset */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box;
+  background: #efe9f4; }
+
+body {
+  font-family: 'Do Hyeon', sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  padding: 3rem; }
+
+.heading-primary {
+  color: #efe9f4;
+  /* fixe le shake de l'animation */
+  backface-visibility: hidden;
+  margin-bottom: 6rem;
+  font-family: 'East Sea Dokdo', cursive; }
+  .heading-primary--main {
+    display: block;
+    font-size: 9rem;
+    font-weight: 500;
+    letter-spacing: 2.5rem;
+    animation: moveInLeft 1s ease-out; }
+  .heading-primary--sub {
+    display: block;
+    font-size: 4rem;
+    font-weight: 800;
+    letter-spacing: 1.12rem;
+    animation-name: moveInRight;
+    animation-duration: 1s;
+    animation: moveInRight 1s ease-out; }
+
+.header {
+  position: relative;
+  height: 95vh;
+  background-image: linear-gradient(to right bottom, rgba(133, 147, 152, 0.8), rgba(40, 48, 72, 0.8)), url(../img/queenLanding.jpg);
+  background-size: cover;
+  background-position: top;
+  /* clip path décrit chaque mouvement du polygone en partant à chaque fois du top left */
+  clip-path: polygon(0 0, 100% 0, 100% 70vh, 0 100%); }
+  .header__logo-box {
+    position: absolute;
+    top: 4rem;
+    left: 4rem; }
+  .header__logo {
+    height: 8rem; }
+  .header__text-box {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; }
+
+.favorites {
+  background: #efe9f4;
+  height: 100vh;
+  padding-top: 5vh; }
