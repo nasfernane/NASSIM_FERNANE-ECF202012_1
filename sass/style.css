@@ -47,8 +47,7 @@ body {
   color: #efe9f4;
   /* fixe le shake de l'animation */
   backface-visibility: hidden;
-  margin-bottom: 6rem;
-  font-family: 'Reem Kufi', sans-serif;
+  margin-bottom: 3rem;
   font-variant: small-caps; }
   .heading-primary--main {
     display: block;
@@ -287,7 +286,8 @@ body {
       border-radius: 10px; }
       .biographySection .displayBiography__bandPicture img {
         width: 100%;
-        height: 60%;
+        height: auto;
+        max-height: 50vh;
         border-radius: 10px 10px 0 0; }
       .biographySection .displayBiography__bandPicture h3 {
         text-align: center;
