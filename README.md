@@ -5,9 +5,25 @@ Première évaluation en cours de formation de Nassim Fernane.
 
 ------- FONCTIONNEMENT ET DESCRIPTION DU SITE -------
 
+### Page 1 ###
+
 La page d'accueil est constituée d'un header, d'une section de présentation en images des artistes favoris, d'une section de recherche d'un nouvel artiste et d'un footer.
 
-Le header fait également office de landing page, avec une image background large et un effet de dégradé demandé par le client. Le logo de la marque est situé en haut à gauche, 
+Le header fait également office de landing page, avec une image background large et un effet de dégradé demandé par le client. Il comprend un logo en haut à gauche et un titre qui apparaît après un court délai, des deux côtés.
+
+La présentation des artistes propose un assemblage de photos des artistes favoris de l'utilisateur, avec des effets de mise en relief au survol de la souris. En bas de la section, un bouton permet d'accéder à la deuxième page du site, pour une présentation plus aboutie des artistes favoris.
+
+La section de recherche d'un nouvel artiste fait apparaître par défault trois cards qui contiennent des images et preview sonores d'un artiste situé dans les favoris de l'utilisateur. Au dessus de ces cards, il a accès à un input qui lui permet de rechercher un nouvel artiste pour afficher ses trois derniers titres, soit en cliquant sur la touche "Entrée" après sa saisie, soit au clic sur une image de Deezer. A droite, un encadré l'informe sur les autres services de streaming musicaux qui seront bientôt disponibles. 
+
+Enfin, le footer reprend le logo du header en plus grand, cette fois-ci centré. Il surplombe des liens de navigation qui pourront à terme permettre à l'utilisateur d'accéder à d'autres sections, comme la page d'à propos, des liens annexes, une présentation des partenaires, un service de support et un formulaire de contact. 
+
+### Page 2 ###
+
+La deuxième page du site, axée sur les artistes favoris de l'utilisateur, reprend la même structure visuelle. 
+
+Le header et le footer ne changent pas. En revanche, la première section propose une biographie des artistes/groupes musicaux avec la liste exhaustive des favoris de l'utilisateur. A gauche, un encadré relate cette biographie tandis qu'à droite on a une image du groupe et le nom correspondant. L'utilisateur peut à tout moment cliquer sur un autre artiste pour changer dynamiquement les informations et afficher la biographie correspondante à l'artiste choisi.
+
+La deuxième section propose une liste des concerts à venir pour les groupes.
 
 
 
