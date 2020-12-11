@@ -1,3 +1,5 @@
+// json contenant les infos de tous les groupes favoris
+
 const favorites = [
     {
         name: 'The Bad Plus',
