@@ -1,3 +1,5 @@
+'use strict';
+
 // WATCH Récupération des éléments
 const albumsDiv = document.querySelector('.albums');
 const searchInput = document.querySelector('.search-box__input');

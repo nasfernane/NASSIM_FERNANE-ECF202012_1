@@ -1,0 +1,33 @@
+.concerts {
+    height: 100vh;
+    width: 100%;
+    padding-top: 20rem;
+    background: linear-gradient(
+        to right bottom,
+        rgba($color-light-grey, 0.8),
+        rgba($color-light-blue, 0.8)
+    ), url(../img/concert.jpg);
+    background-size: cover;
+    background-position: top;
+    clip-path: polygon(0 25%, 100% 0, 100% 75%, 0 100%);
+
+    h2 {
+        text-align: center;
+        font-size: 3rem;
+        font-variant: small-caps;
+    }
+
+    &__dates {
+        padding-top: 5rem;
+        display: flex;
+        justify-content: space-around;
+        font-size: 1.5rem;
+
+        div h3 {
+            padding-bottom: 3rem;
+            font-variant: small-caps;
+        }
+
+    }
+}
+

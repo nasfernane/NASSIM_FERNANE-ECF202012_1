@@ -148,6 +148,29 @@ body {
     transform: translate(-50%, -50%);
     text-align: center; }
 
+.footer {
+  height: 30vh;
+  text-align: center; }
+  .footer img {
+    height: 20rem; }
+  .footer ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    margin: 0 auto;
+    font-size: 2rem; }
+    .footer ul li a {
+      text-decoration: none;
+      text-transform: uppercase; }
+      .footer ul li a:active, .footer ul li a:link, .footer ul li a:visited {
+        color: #283048;
+        letter-spacing: 0.4rem; }
+      .footer ul li a:hover {
+        font-weight: 600;
+        text-decoration: underline; }
+
 .favorites {
   background: #efe9f4;
   height: 80vh;
@@ -236,25 +259,61 @@ body {
         display: flex;
         justify-content: space-around; }
 
-.footer {
-  height: 30vh;
-  text-align: center; }
-  .footer img {
-    height: 20rem; }
-  .footer ul {
-    list-style-type: none;
+.biographySection {
+  height: 80vh; }
+  .biographySection h2 {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 5rem;
+    font-variant: small-caps; }
+  .biographySection__favorites {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 70%;
+    justify-content: space-around;
+    font-size: 2rem;
+    width: 80%;
     margin: 0 auto;
-    font-size: 2rem; }
-    .footer ul li a {
-      text-decoration: none;
-      text-transform: uppercase; }
-      .footer ul li a:active, .footer ul li a:link, .footer ul li a:visited {
-        color: #283048;
-        letter-spacing: 0.4rem; }
-      .footer ul li a:hover {
-        font-weight: 600;
-        text-decoration: underline; }
+    padding-bottom: 5rem;
+    font-variant: small-caps; }
+    .biographySection__favorites p:hover {
+      font-weight: bold;
+      cursor: pointer; }
+  .biographySection .displayBiography {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start; }
+    .biographySection .displayBiography__bandPicture {
+      width: 40%;
+      border: 1px solid #283048;
+      border-radius: 10px; }
+      .biographySection .displayBiography__bandPicture img {
+        width: 100%;
+        height: 60%;
+        border-radius: 10px 10px 0 0; }
+      .biographySection .displayBiography__bandPicture h3 {
+        text-align: center;
+        line-height: 6rem; }
+    .biographySection .displayBiography__biography {
+      width: 40%;
+      font-size: 1.6rem;
+      text-align: justify; }
+
+.concerts {
+  height: 100vh;
+  width: 100%;
+  padding-top: 20rem;
+  background: linear-gradient(to right bottom, rgba(239, 233, 244, 0.8), rgba(133, 147, 152, 0.8)), url(../img/concert.jpg);
+  background-size: cover;
+  background-position: top;
+  clip-path: polygon(0 25%, 100% 0, 100% 75%, 0 100%); }
+  .concerts h2 {
+    text-align: center;
+    font-size: 3rem;
+    font-variant: small-caps; }
+  .concerts__dates {
+    padding-top: 5rem;
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.5rem; }
+    .concerts__dates div h3 {
+      padding-bottom: 3rem;
+      font-variant: small-caps; }

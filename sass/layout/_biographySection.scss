@@ -1,0 +1,54 @@
+.biographySection {
+    height: 80vh;
+
+    h2 {
+        text-align: center;
+        font-size: 3rem;
+        margin-bottom: 5rem;
+        font-variant: small-caps;
+    }
+
+    &__favorites {
+        display: flex;
+        justify-content: space-around;
+        font-size: 2rem;
+        width: 80%;
+        margin: 0 auto;
+        padding-bottom: 5rem;
+        font-variant: small-caps;
+
+        p:hover {
+            font-weight: bold;
+            cursor: pointer;
+        }
+    }
+
+    .displayBiography {
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+
+        &__bandPicture {
+            width: 40%;
+            border: 1px solid $color-dark-blue;
+            border-radius: 10px;
+
+            img {
+                width: 100%;
+                height: 60%;
+                border-radius: 10px 10px 0 0;
+            }
+
+            h3 {
+                text-align: center;
+                line-height: 6rem;
+            }
+        }
+
+        &__biography {
+            width: 40%;
+            font-size: 1.6rem;
+            text-align: justify;
+        }
+    }
+}
