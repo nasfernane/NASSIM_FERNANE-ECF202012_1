@@ -1,7 +1,7 @@
 *Première évaluation en cours de formation de Nassim Fernane : Projet MyMusic App du 9 déc. 2020.*
 
 
-## *FONCTIONNEMENT ET DESCRIPTION DU SITE*
+## **FONCTIONNEMENT ET DESCRIPTION DU SITE**
 
 ### Page 1 ###
 
@@ -24,7 +24,7 @@ Le header et le footer ne changent pas. En revanche, la première section propos
 La seconde section propose une liste des concerts à venir pour ces mêmes groupes.
 
 
-## *ORGANISATION DU CODE*
+## **ORGANISATION DU CODE**
 
 La convention utilisée pour le nom des images est la camelCase.
 Les classes et ID sont structurées selon la méthodologie BEM (Block - Element - Modifier).
@@ -46,7 +46,7 @@ Le dossier '/javasript' regroupe les scripts principaux et le fichier json stock
 **Lien de la maquette Figma** : https://www.figma.com/file/CciOnwXV0xB0fck6iezUpu/My-Music-App?node-id=0%3A1
 
 
-## *JOURNAL DE BORD*
+## **JOURNAL DE BORD**
 
 ### Jour 1 ###
 1. Analyse des documents et demandes clients 
