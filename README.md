@@ -3,7 +3,7 @@
 **Première évaluation en cours de formation de Nassim Fernane.**
 
 
-## FONCTIONNEMENT ET DESCRIPTION DU SITE 
+## *FONCTIONNEMENT ET DESCRIPTION DU SITE *
 
 ### Page 1 ###
 
@@ -26,8 +26,6 @@ Le header et le footer ne changent pas. En revanche, la première section propos
 La deuxième section propose une liste des concerts à venir pour les groupes.
 
 
-
-
 ## *ORGANISATION DU CODE*
 
 La convention utilisée pour le nom des images est la camelCase.
@@ -40,7 +38,8 @@ Les feuilles de style sont situées dans le dossier 'sass', lui-même divisé en
 - Le dossier 'base' contient le fichier regroupant les animations, celui pour le reset global du style et celui des typographies relatif à la définition des polices et du titre principal du site web.
 - Le dossier 'components' regroupe des éléments auto-suffisants.
 - Le dossier 'layout' regroupe les feuilles de style des principales sections du site, par ex : header, footer, etc.
-Toutes ces feuilles de style sont ensuite importées dans le fichier main.scss, lui même déployé dans le fichier style.css
+
+Toutes ces feuilles de style sont ensuite importées dans le fichier main.scss, lui même déployé dans le fichier style.css.
 La commande terminal 'npm run scss' lancée à la racine du projet opère un script qui met à jour automatiquement le fichier CSS.
 
 Le dossier '/img' regroupe toutes les images du site.
@@ -49,7 +48,7 @@ Le dossier '/javasript' regroupe les scripts principaux et le fichier json stock
 **Lien de la maquette Figma** : https://www.figma.com/file/CciOnwXV0xB0fck6iezUpu/My-Music-App?node-id=0%3A1
 
 
-# *JOURNAL DE BORD*
+## *JOURNAL DE BORD*
 
 ### Jour 1 ###
 1. Analyse des documents et demandes clients 
