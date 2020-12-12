@@ -1,6 +1,4 @@
-# ECF202012_1
-
-**Première évaluation en cours de formation de Nassim Fernane.**
+*Première évaluation en cours de formation de Nassim Fernane : Projet MyMusic App du 9 déc. 2020*
 
 
 ## *FONCTIONNEMENT ET DESCRIPTION DU SITE *
@@ -23,7 +21,7 @@ La deuxième page du site, axée sur les artistes favoris de l'utilisateur, repr
 
 Le header et le footer ne changent pas. En revanche, la première section propose une biographie des artistes/groupes musicaux avec la liste exhaustive des favoris de l'utilisateur. A gauche, un encadré relate cette biographie tandis qu'à droite on a une image du groupe et le nom correspondant. L'utilisateur peut à tout moment cliquer sur un autre artiste pour changer dynamiquement les informations et afficher la biographie correspondante à l'artiste choisi.
 
-La deuxième section propose une liste des concerts à venir pour les groupes.
+La seconde section propose une liste des concerts à venir pour ces mêmes groupes.
 
 
 ## *ORGANISATION DU CODE*
