@@ -49,43 +49,43 @@ Le dossier '/javasript' regroupe les scripts principaux et le fichier json stock
 ## **JOURNAL DE BORD**
 
 ### Jour 1 ###
-1. Analyse des documents et demandes clients 
+1. *Analyse des documents et demandes clients* 
 - Définition de ce qui est indispensable et des aspects sur lequels on peut proposer des modifications
 - Réflexion et définition des fonctionnalités du site et de son interface
 - Préparation des ressources : choix des articles, images et biographies
 - Elaboration des codes couleurs et choix des polices de caractères
 
-2. Elaboration de la structure générale du site et outils 
+2. *Elaboration de la structure générale du site et outils* 
 - Création des fichiers HTML et principales sections de développement 
 - Mise en place de SASS et fichiers de style modulaires 
 - Installation des dépendances
 
-3. Maquettage du site première partie 
+3. *Maquettage du site première partie* 
 - Choix et retouches du logo, déclinaison des couleurs
 - Début du maquettage, page 1 et versions tablette/mobile
 - Modernisation du design
  
  ### Jour 2 ###
- 1. Maquettage du site deuxième partie 
+ 1. *Maquettage du site deuxième partie* 
  - Fin de la page 2 et déclinaisons responsive
  
- 2.Début du code -
+ 2. *Début du code* 
  - Stockage des couleurs en variables CSS
  - Séparation des différentes sections en layouts 
  - Approfondissement de la structure du site, mise en place des contenus
  
- 3. Mise en forme 
+ 3. *Mise en forme* 
  - Conception visuelle des principales sections de la page d'accueil
  
- 4. Script -
+ 4. *Script*
  - Implémentation de la partie JavaScript pour la section de recherche d'un nouvel artiste, avec preview sonore des trois derniers titres
  
  ### Jour 3 ###
- 1. Mise en forme, seconde partie 
+ 1. *Mise en forme, seconde partie* 
  - Conception visuelle de la page des artistes favoris
  - Mises à jour mineures sur le design de la première page
  
- 2. Script -
+ 2. *Script* 
  - Ecriture d'un fichier JSON pour stocker les informations des artistes mis en favoris
  - Elaboration d'un script pour changer l'encadré des favoris dynamiquement
  - Elaboration d'un script pour revenir à la page d'accueil 
