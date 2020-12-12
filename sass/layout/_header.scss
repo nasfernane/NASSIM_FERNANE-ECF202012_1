@@ -11,7 +11,7 @@
     background-size: cover;
     background-position: top;
     /* clip path décrit chaque mouvement du polygone en partant à chaque fois du top left */
-    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
 
     &__logo-box {
         position: absolute;
