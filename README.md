@@ -3,7 +3,7 @@
 **Première évaluation en cours de formation de Nassim Fernane.**
 
 
-# FONCTIONNEMENT ET DESCRIPTION DU SITE 
+## FONCTIONNEMENT ET DESCRIPTION DU SITE 
 
 ### Page 1 ###
 
