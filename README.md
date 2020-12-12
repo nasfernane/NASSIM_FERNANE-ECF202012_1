@@ -1,7 +1,7 @@
-*Première évaluation en cours de formation de Nassim Fernane : Projet MyMusic App du 9 déc. 2020*
+*Première évaluation en cours de formation de Nassim Fernane : Projet MyMusic App du 9 déc. 2020.*
 
 
-## *FONCTIONNEMENT ET DESCRIPTION DU SITE *
+## *FONCTIONNEMENT ET DESCRIPTION DU SITE*
 
 ### Page 1 ###
 
