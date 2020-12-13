@@ -1,18 +1,20 @@
-// mediaqueries
+/* mediaqueries */
 
-// phones : screen < 600px
-// tablets : 500 px < screen < 1200px
+/* .albums : screen < 600px 
+tablets : 500 px < screen < 1200px
 
-// Phones
+Phones */
+
 @media screen and (max-width: 600px) {
-    // ajustement de la taille de police de base pour tout le site
+    /* ajustement de la taille de police de base pour tout le site */
+
     html {
         font-size: clamp(1vw, 6px, 3vw);
     }
 
-    // ** PARTIES COMMUNES **
+    /* ** PARTIES COMMUNES **
 
-    // ajustement du header et du titre
+    ajustement du header et du titre */
     .header {
         height: 50vh;
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
@@ -40,7 +42,7 @@
         }
     }
 
-    // ajustement du footer
+    /* ajustement du footer */
     footer.footer {
         height: auto;
 
@@ -61,8 +63,8 @@
         }
     }
 
-    // ** PREMIERE PAGE **
-    // section favoris, ajustement des images et de l'ombre
+    /* ** PREMIERE PAGE ** */
+    /* section favoris, ajustement des images et de l'ombre */
     .favorites {
         width: 100%;
         min-height: auto;
@@ -107,7 +109,7 @@
         }
     }
 
-    // section recherche
+    /* section recherche*/
     .search {
         margin-top: 5rem;
         min-height: 180vh;
@@ -138,7 +140,7 @@
             }
         }
 
-        // albums deezer
+        /* albums deezer */
         .albums {
             flex-direction: column;
             justify-content: space-between;
@@ -172,9 +174,9 @@
         }
     }
 
-    // ** DEUXIEME PAGE**
+    /* ** DEUXIEME PAGE**
 
-    //section biographie
+    section biographie */
     .biographySection {
         height: auto;
 
@@ -203,18 +205,18 @@
         }
     }
 
-    //section concerts
+    /* section concerts */
     .concerts {
         min-height: 100vh;
         height: auto;
-        // annulation du polygone
+        /* annulation du polygone */
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-        // aération
+        /* aération */
         margin-top: 5rem;
         padding-top: 5rem;
         overflow: auto;
 
-        // wrap sur les dates
+        /* wrap sur les dates */
         &__dates {
             flex-wrap: wrap;
 

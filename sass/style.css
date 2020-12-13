@@ -1,4 +1,6 @@
 @charset "UTF-8";
+/* stockage des couleurs */
+/* animations pour les fade in du titre */
 @import url("https://fonts.googleapis.com/css2?family=Reem+Kufi&display=swap");
 @keyframes moveInLeft {
   0% {
@@ -36,6 +38,8 @@ body {
   background: #efe9f4;
   font-weight: 400; }
 
+/* font-family: 'Reem Kufi', sans-serif; */
+/* typography */
 body {
   font-family: 'Reem Kufi', sans-serif;
   font-weight: 400;
@@ -48,7 +52,9 @@ body {
   /* fixe le shake de l'animation */
   backface-visibility: hidden;
   margin-bottom: 3rem;
-  font-variant: small-caps; }
+  font-variant: small-caps;
+  /* titre première partie */
+  /* titre seconde partie */ }
   .heading-primary--main {
     display: block;
     font-size: 9rem;
@@ -64,6 +70,7 @@ body {
     animation-duration: 1s;
     animation: moveInRight 1s ease-out; }
 
+/* bouton des favoris */
 .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
@@ -104,6 +111,7 @@ body {
   z-index: -1;
   transition: all 0.4s ease-out; }
 
+/* albums deezer */
 .albums {
   display: flex;
   justify-content: space-around;
@@ -127,9 +135,11 @@ body {
       width: 100%;
       height: 3rem; }
 
+/* header */
 .header {
   position: relative;
   height: 95vh;
+  /* placement de l'image landing dans un header, avec un linear-gradient pour le dégradé demandé par le client */
   background-image: linear-gradient(to right bottom, rgba(133, 147, 152, 0.8), rgba(40, 48, 72, 0.8)), url(../img/queenLanding.jpg);
   background-size: cover;
   background-position: top;
@@ -151,6 +161,7 @@ body {
     transform: translate(-50%, -50%);
     text-align: center; }
 
+/* footer */
 .footer {
   height: 30vh;
   text-align: center; }
@@ -174,6 +185,7 @@ body {
         font-weight: 600;
         text-decoration: underline; }
 
+/* section favoris */
 .favorites {
   background: #efe9f4;
   height: 80vh;
@@ -213,6 +225,7 @@ body {
         padding: 0.5rem;
         z-index: 99; }
 
+/* section recherche d'un nouvel artiste */
 .search {
   height: 120vh;
   width: 100%;
@@ -261,6 +274,7 @@ body {
         display: flex;
         justify-content: space-around; }
 
+/* section biographies */
 .biographySection {
   height: 80vh; }
   .biographySection h2 {
@@ -300,6 +314,7 @@ body {
       font-size: 1.6rem;
       text-align: justify; }
 
+/* section concerts */
 .concerts {
   height: 100vh;
   width: 100%;
@@ -324,6 +339,9 @@ body {
 @media screen and (max-width: 1200px) {
   html {
     font-size: clamp(1vw, 8px, 2.5vw); }
+  /* ** PARTIES COMMUNES **
+
+     ajustement du header et du titre */
   .header {
     height: 70vh; }
     .header__logo-box {
@@ -338,6 +356,7 @@ body {
         margin-bottom: 3rem; }
       .header .heading-primary--sub {
         font-size: clamp(1.5vw, 2.5rem, 6vw); }
+  /* ajustement du footer */
   footer.footer {
     height: auto; }
     footer.footer img {
@@ -350,6 +369,8 @@ body {
       font-size: 1.7rem; }
       footer.footer ul li {
         margin: 0.5rem; }
+  /* ** PREMIERE PAGE **
+    section favoris, ajustement des images et de l'ombre */
   .favorites {
     width: 100%;
     min-height: 100vh !important;
@@ -378,10 +399,12 @@ body {
           top: 0;
           left: 0;
           z-index: 1; }
+  /* section recherche */
   .search {
     padding-top: 40%;
     height: auto;
-    min-height: 140vh; }
+    min-height: 140vh;
+    /* albums deezer */ }
     .search .search-box {
       width: 80%;
       flex-wrap: wrap; }
@@ -400,6 +423,9 @@ body {
         min-height: 20vh; }
         .search .albums__card img {
           min-height: 80%; }
+  /* ** DEUXIEME PAGE**
+
+    section biographie */
   .biographySection {
     height: auto; }
     .biographySection h2 {
@@ -416,11 +442,13 @@ body {
       margin-bottom: 5rem; }
     .displayBiography__biography {
       min-width: 80%; }
+  /*section concerts*/
   .concerts {
     min-height: 120vh;
     padding-top: 35%;
     padding-bottom: 20vh;
-    overflow: scroll; }
+    overflow: scroll;
+    /* wrap sur les dates*/ }
     .concerts__dates {
       flex-wrap: wrap; }
       .concerts__dates div {
@@ -432,9 +460,18 @@ body {
           padding-bottom: 1rem;
           font-weight: bold; } }
 
+/* mediaqueries */
+/* .albums : screen < 600px 
+tablets : 500 px < screen < 1200px
+
+Phones */
 @media screen and (max-width: 600px) {
+  /* ajustement de la taille de police de base pour tout le site */
   html {
     font-size: clamp(1vw, 6px, 3vw); }
+  /* ** PARTIES COMMUNES **
+
+    ajustement du header et du titre */
   .header {
     height: 50vh;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); }
@@ -451,6 +488,7 @@ body {
         margin-bottom: 5rem; }
       .header .heading-primary--sub {
         font-size: clamp(1.5vw, 3rem, 6vw); }
+  /* ajustement du footer */
   footer.footer {
     height: auto; }
     footer.footer img {
@@ -463,6 +501,8 @@ body {
       font-size: 1.4rem; }
       footer.footer ul li {
         margin: 0.5rem; }
+  /* ** PREMIERE PAGE ** */
+  /* section favoris, ajustement des images et de l'ombre */
   .favorites {
     width: 100%;
     min-height: auto;
@@ -493,13 +533,15 @@ body {
           top: 60%;
           left: 0;
           z-index: 3; }
+  /* section recherche*/
   .search {
     margin-top: 5rem;
     min-height: 180vh;
     height: auto;
     margin-top: 5rem;
     padding-top: 5rem;
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); }
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    /* albums deezer */ }
     .search .search-box {
       flex-direction: column;
       width: 100%;
@@ -535,6 +577,9 @@ body {
           width: 80%;
           height: 3rem;
           max-height: 5%; }
+  /* ** DEUXIEME PAGE**
+
+    section biographie */
   .biographySection {
     height: auto; }
     .biographySection h2 {
@@ -551,13 +596,17 @@ body {
       margin-bottom: 5rem; }
     .displayBiography__biography {
       min-width: 80%; }
+  /* section concerts */
   .concerts {
     min-height: 100vh;
     height: auto;
+    /* annulation du polygone */
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    /* aération */
     margin-top: 5rem;
     padding-top: 5rem;
-    overflow: auto; }
+    overflow: auto;
+    /* wrap sur les dates */ }
     .concerts__dates {
       flex-wrap: wrap; }
       .concerts__dates div {

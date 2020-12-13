@@ -60,6 +60,7 @@ deezerBtn.addEventListener('click', () => {
     if (searchInput.value) fetchAlbums(`${searchInput.value}`);
 });
 
+// au chargement du site, charge des cartes pré-remplies
 window.addEventListener('load', () => {
     fetchAlbums('The Bad Plus');
 });

@@ -1,6 +1,7 @@
-// font-family: 'Reem Kufi', sans-serif;
+/* font-family: 'Reem Kufi', sans-serif; */
 @import url('https://fonts.googleapis.com/css2?family=Reem+Kufi&display=swap');
 
+/* typography */
 body {
     font-family: 'Reem Kufi', sans-serif;
     font-weight: 400;
@@ -11,12 +12,12 @@ body {
 
 .heading-primary {
     color: $color-light-grey;
-    // text-transform: uppercase;
     /* fixe le shake de l'animation */
     backface-visibility: hidden;
     margin-bottom: 3rem;
     font-variant: small-caps;
 
+    /* titre première partie */
     &--main {
         display: block;
         font-size: 9rem;
@@ -25,6 +26,7 @@ body {
         animation: moveInLeft 1s ease-out;
     }
 
+    /* titre seconde partie */
     &--sub {
         display: block;
         font-size: 4rem;

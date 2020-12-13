@@ -3,9 +3,9 @@
         font-size: clamp(1vw, 8px, 2.5vw);
     }
 
-    // ** PARTIES COMMUNES **
+    /* ** PARTIES COMMUNES **
 
-    // ajustement du header et du titre
+     ajustement du header et du titre */
     .header {
         height: 70vh;
 
@@ -31,7 +31,7 @@
         }
     }
 
-    // ajustement du footer
+    /* ajustement du footer */
     footer.footer {
         height: auto;
 
@@ -52,8 +52,8 @@
         }
     }
 
-    // ** PREMIERE PAGE **
-    // section favoris, ajustement des images et de l'ombre
+    /* ** PREMIERE PAGE **
+    section favoris, ajustement des images et de l'ombre */
     .favorites {
         width: 100%;
         min-height: 100vh !important;
@@ -93,6 +93,7 @@
         }
     }
 
+    /* section recherche */
     .search {
         padding-top: 40%;
         height: auto;
@@ -112,6 +113,7 @@
             }
         }
 
+        /* albums deezer */
         .albums {
             height: 60%;
             max-height: 40vh;
@@ -130,9 +132,9 @@
         }
     }
 
-    // ** DEUXIEME PAGE**
+    /* ** DEUXIEME PAGE**
 
-    //section biographie
+    section biographie */
     .biographySection {
         height: auto;
 
@@ -161,14 +163,14 @@
         }
     }
 
-    //section concerts
+    /*section concerts*/
     .concerts {
         min-height: 120vh;
         padding-top: 35%;
         padding-bottom: 20vh;
         overflow: scroll;
 
-        // wrap sur les dates
+        /* wrap sur les dates*/
         &__dates {
             flex-wrap: wrap;
 

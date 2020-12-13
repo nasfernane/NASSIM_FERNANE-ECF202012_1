@@ -1,7 +1,8 @@
+/* header */
 .header {
     position: relative;
     height: 95vh;
-    // placement de l'image landing dans un header, avec un linear-gradient pour le
+    /* placement de l'image landing dans un header, avec un linear-gradient pour le dégradé demandé par le client */
     background-image: linear-gradient(
             to right bottom,
             rgba($color-light-blue, 0.8),
