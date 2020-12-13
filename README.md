@@ -33,7 +33,7 @@ Le site est divisé en deux pages HTML : page d'accueil et pages des favoris.
 
 Les feuilles de style sont situées dans le dossier 'sass', lui-même divisé en plusieurs parties : 
 - Le dossier 'abstract' contient tout ce qui ne génère pas de code à proprement parler, en l'occurence le stockage des variables. 
-- Le dossier 'base' contient le fichier regroupant les animations, celui pour le reset global du style et celui des typographies relatif à la définition des polices et du titre principal du site web.
+- Le dossier 'base' contient le fichier regroupant les animations, celui pour le reset global du style et celui des typographies relatif à la définition des polices et du titre principal du site web. Il contient également les deux feuilles de style pour les mediaqueries (téléphones et tablettes).
 - Le dossier 'components' regroupe des éléments auto-suffisants.
 - Le dossier 'layout' regroupe les feuilles de style des principales sections du site, par ex : header, footer, etc.
 
