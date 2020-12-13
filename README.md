@@ -23,6 +23,8 @@ Le header et le footer ne changent pas. En revanche, la première section propos
 
 La seconde section propose une liste des concerts à venir pour ces mêmes groupes.
 
+On peut revenir à la première page en cliquant n'importe où sur le header.
+
 
 ## **ORGANISATION DU CODE**
 
