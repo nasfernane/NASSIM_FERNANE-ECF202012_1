@@ -89,6 +89,17 @@ Le dossier '/javasript' regroupe les scripts principaux et le fichier json stock
  - Ecriture d'un fichier JSON pour stocker les informations des artistes mis en favoris
  - Elaboration d'un script pour changer l'encadré des favoris dynamiquement
  - Elaboration d'un script pour revenir à la page d'accueil 
+ 
+ ## Jour 4 ###
+ 1. *Mise en forme, troisième partie*
+ - Finalisation du responsive
+ - Correctifs mineurs
+ 
+ 2. *Code*
+ - Vérification de la structure et commentaires
+ 
+ 3. *Organisation* 
+ - Mise à jour du Readme
 
  
  
