@@ -3,7 +3,6 @@
 @import 'base/animations';
 @import 'base/base';
 @import 'base/typography';
-@import 'base/mediaqueries';
 
 @import 'components/btn';
 @import 'components/albums';
@@ -14,3 +13,7 @@
 @import 'layout/searchSection.scss';
 @import 'layout/biographySection.scss';
 @import 'layout/concertsSection.scss';
+
+// mediaqueries en dernier pour override correctement le CSS
+@import 'base/mediaTablets';
+@import 'base/mediaCellPhones';

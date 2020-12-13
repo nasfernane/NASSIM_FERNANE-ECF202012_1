@@ -34,7 +34,7 @@
         background-color: $color-light-blue;
         color: $color-light-grey;
         margin-top: 2rem;
-    
+
         &::after {
             background-color: $color-light-blue;
         }
@@ -53,5 +53,4 @@
         z-index: -1;
         transition: all 0.4s ease-out;
     }
-
 }

@@ -64,79 +64,6 @@ body {
     animation-duration: 1s;
     animation: moveInRight 1s ease-out; }
 
-@media screen and (max-width: 500px) {
-  html {
-    font-size: 6px; }
-  .header {
-    height: 80vh !important;
-    clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%); }
-  .heading-primary--main {
-    font-size: 7rem;
-    margin-bottom: 5rem; }
-  .favorites {
-    height: 160vh; }
-    .favorites__display-box {
-      min-width: 100%;
-      height: 80%; }
-      .favorites__display-box--img {
-        min-width: 80%;
-        max-width: 100%;
-        max-height: 50%;
-        height: auto;
-        box-shadow: 3px 3px 20px #283048;
-        padding: 0; }
-        .favorites__display-box--img:nth-child(1) {
-          bottom: 0;
-          left: 0 !important;
-          z-index: 3; }
-        .favorites__display-box--img:nth-child(2) {
-          top: 30% !important;
-          right: 0;
-          z-index: 2; }
-        .favorites__display-box--img:nth-child(3) {
-          top: 70%;
-          left: 0;
-          z-index: 1; }
-  section.search {
-    margin-top: 0;
-    height: auto;
-    padding-top: 40%;
-    clip-path: polygon(0 15%, 100% 0, 100% 85%, 0 100%) !important; }
-    section.search div.search-box {
-      flex-direction: column;
-      width: 100% !important;
-      height: 15vh !important;
-      border: 1px solid red;
-      margin-top: 1rem; }
-      section.search div.search-box__input {
-        margin-bottom: 1rem;
-        width: 60% !important; }
-      section.search div.search-box__soon {
-        display: none !important; }
-      section.search div.search-box__deezer-button {
-        height: 7rem !important;
-        width: 7rem !important; }
-    section.search .albums {
-      flex-direction: column;
-      flex-wrap: no-wrap;
-      border: 1px solid red;
-      height: auto;
-      align-items: center; }
-      section.search .albums__card {
-        width: 80%;
-        height: 20%; }
-        section.search .albums__card img {
-          height: 70%; }
-        section.search .albums__card h5 {
-          font-size: 1.8rem; }
-        section.search .albums__card audio {
-          width: 80%;
-          height: 4rem; } }
-
-@media screen and (max-width: 1200px) {
-  html {
-    font-size: 8px; } }
-
 .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
@@ -187,6 +114,7 @@ body {
   flex-wrap: wrap; }
   .albums__card {
     width: 20%;
+    min-width: 250px;
     height: 80%;
     border: 1px solid #efe9f4;
     border-radius: 16px;
@@ -207,6 +135,9 @@ body {
   background-position: top;
   /* clip path décrit chaque mouvement du polygone en partant à chaque fois du top left */
   clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%); }
+  .header__text-box {
+    width: 100%;
+    margin: 0 auto; }
   .header__logo-box {
     position: absolute;
     top: 4rem;
@@ -278,8 +209,7 @@ body {
         z-index: 1; }
       .favorites__display-box--img:hover {
         background: #efe9f4;
-        width: 66rem;
-        height: 42rem;
+        transform: scale(1.2);
         padding: 0.5rem;
         z-index: 99; }
 
@@ -321,7 +251,7 @@ body {
       border-radius: 50%;
       background: url("../img/logoDeezer.png") center;
       background-size: cover;
-      border: 0; }
+      border: 1px solid #efe9f4; }
     .search .search-box__soon {
       border: 1px solid #283048;
       border-radius: 8px;
@@ -390,3 +320,249 @@ body {
     .concerts__dates div h3 {
       padding-bottom: 3rem;
       font-variant: small-caps; }
+
+@media screen and (max-width: 1200px) {
+  html {
+    font-size: clamp(1vw, 8px, 2.5vw); }
+  .header {
+    height: 70vh; }
+    .header__logo-box {
+      top: 2rem;
+      left: 2rem; }
+    .header__logo {
+      height: 10rem; }
+    .header .heading-primary {
+      margin-top: 12rem; }
+      .header .heading-primary--main {
+        font-size: clamp(3vw, 5rem, 8vw);
+        margin-bottom: 3rem; }
+      .header .heading-primary--sub {
+        font-size: clamp(1.5vw, 2.5rem, 6vw); }
+  footer.footer {
+    height: auto; }
+    footer.footer img {
+      height: clamp(8vw, 15rem, 18vw); }
+    footer.footer ul {
+      width: auto;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      width: 100%;
+      font-size: 1.7rem; }
+      footer.footer ul li {
+        margin: 0.5rem; }
+  .favorites {
+    width: 100%;
+    min-height: 100vh !important;
+    max-height: 120vh;
+    height: auto;
+    contain: none; }
+    .favorites__display-box {
+      width: 80%;
+      height: auto;
+      min-height: 80vh; }
+      .favorites__display-box--img {
+        width: 60%;
+        min-width: px;
+        max-height: 50%;
+        min-height: 40%;
+        box-shadow: 3px 3px 20px #283048; }
+        .favorites__display-box--img:nth-child(1) {
+          bottom: 0;
+          left: 15%;
+          z-index: 3; }
+        .favorites__display-box--img:nth-child(2) {
+          top: 30% !important;
+          right: 0;
+          z-index: 2; }
+        .favorites__display-box--img:nth-child(3) {
+          top: 0;
+          left: 0;
+          z-index: 1; }
+  .search {
+    padding-top: 40%;
+    height: auto;
+    min-height: 140vh; }
+    .search .search-box {
+      width: 80%;
+      flex-wrap: wrap; }
+      .search .search-box__input {
+        width: 30%; }
+      .search .search-box__soon {
+        min-width: 150px;
+        font-size: 1rem; }
+    .search .albums {
+      height: 60%;
+      max-height: 40vh; }
+      .search .albums__card {
+        width: 25%;
+        min-width: 150px;
+        height: clamp(20%, 40%, 40%);
+        min-height: 20vh; }
+        .search .albums__card img {
+          min-height: 80%; }
+  .biographySection {
+    height: auto; }
+    .biographySection h2 {
+      padding-top: 5rem; }
+    .biographySection__favorites {
+      flex-wrap: wrap; }
+  .displayBiography {
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center !important; }
+    .displayBiography__bandPicture {
+      min-width: 80%;
+      margin-bottom: 5rem; }
+    .displayBiography__biography {
+      min-width: 80%; }
+  .concerts {
+    min-height: 120vh;
+    padding-top: 35%;
+    padding-bottom: 20vh;
+    overflow: scroll; }
+    .concerts__dates {
+      flex-wrap: wrap; }
+      .concerts__dates div {
+        width: 25%;
+        max-width: 150px;
+        max-height: 60%; }
+        .concerts__dates div h3 {
+          margin-bottom: 5rem;
+          padding-bottom: 1rem;
+          font-weight: bold; } }
+
+@media screen and (max-width: 600px) {
+  html {
+    font-size: clamp(1vw, 6px, 3vw); }
+  .header {
+    height: 50vh;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); }
+    .header__logo-box {
+      top: 2rem;
+      left: 2rem; }
+    .header__logo {
+      height: 6rem;
+      width: auto; }
+    .header .heading-primary {
+      margin-top: 15rem; }
+      .header .heading-primary--main {
+        font-size: clamp(3vw, 5rem, 8vw);
+        margin-bottom: 5rem; }
+      .header .heading-primary--sub {
+        font-size: clamp(1.5vw, 3rem, 6vw); }
+  footer.footer {
+    height: auto; }
+    footer.footer img {
+      height: clamp(8vw, 15rem, 18vw); }
+    footer.footer ul {
+      width: auto;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      width: 100%;
+      font-size: 1.4rem; }
+      footer.footer ul li {
+        margin: 0.5rem; }
+  .favorites {
+    width: 100%;
+    min-height: auto;
+    height: 140vh;
+    max-height: 140vh; }
+    .favorites h2 {
+      margin-top: 3rem;
+      margin-bottom: 3rem; }
+    .favorites__display-box {
+      min-width: 90%;
+      height: 80%;
+      max-height: 100vh; }
+      .favorites__display-box--img {
+        width: 100%;
+        max-height: 50%;
+        min-height: 30%;
+        height: auto;
+        box-shadow: 3px 3px 20px #283048; }
+        .favorites__display-box--img:nth-child(1) {
+          top: 0;
+          left: 0;
+          z-index: 1; }
+        .favorites__display-box--img:nth-child(2) {
+          top: 30%;
+          left: 0;
+          z-index: 2; }
+        .favorites__display-box--img:nth-child(3) {
+          top: 60%;
+          left: 0;
+          z-index: 3; }
+  .search {
+    margin-top: 5rem;
+    min-height: 180vh;
+    height: auto;
+    margin-top: 5rem;
+    padding-top: 5rem;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); }
+    .search .search-box {
+      flex-direction: column;
+      width: 100%;
+      height: 15vh;
+      margin-top: 1rem; }
+      .search .search-box__input {
+        margin-bottom: 1rem;
+        width: 60%; }
+      .search .search-box__soon {
+        display: none; }
+      .search .search-box__deezer-button {
+        width: 7rem;
+        height: 7rem; }
+    .search .albums {
+      flex-direction: column;
+      justify-content: space-between;
+      flex-wrap: nowrap;
+      height: auto;
+      min-height: 100vh;
+      max-height: 200vh;
+      align-items: center; }
+      .search .albums__card {
+        width: 80%;
+        max-height: 33%;
+        min-height: 40vh;
+        margin-bottom: 5rem; }
+        .search .albums__card img {
+          height: 75%;
+          min-height: 20vh; }
+        .search .albums__card h5 {
+          font-size: 1.8rem; }
+        .search .albums__card audio {
+          width: 80%;
+          height: 3rem;
+          max-height: 5%; }
+  .biographySection {
+    height: auto; }
+    .biographySection h2 {
+      padding-top: 5rem; }
+    .biographySection__favorites {
+      flex-wrap: wrap; }
+  .displayBiography {
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center !important; }
+    .displayBiography__bandPicture {
+      min-width: 80%;
+      margin-bottom: 5rem; }
+    .displayBiography__biography {
+      min-width: 80%; }
+  .concerts {
+    min-height: 100vh;
+    height: auto;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    margin-top: 5rem;
+    padding-top: 5rem;
+    overflow: auto; }
+    .concerts__dates {
+      flex-wrap: wrap; }
+      .concerts__dates div {
+        min-width: 40%;
+        max-height: 25%; }
+        .concerts__dates div h3 {
+          padding-bottom: 1rem;
+          font-weight: bold; } }

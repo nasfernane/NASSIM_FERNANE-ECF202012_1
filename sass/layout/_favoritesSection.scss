@@ -43,8 +43,7 @@
             }
             &:hover {
                 background: $color-light-grey;
-                width: 66rem;
-                height: 42rem;
+                transform: scale(1.2);
                 padding: 0.5rem;
                 z-index: 99;
             }

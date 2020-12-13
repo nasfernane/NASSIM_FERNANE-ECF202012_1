@@ -13,6 +13,11 @@
     /* clip path décrit chaque mouvement du polygone en partant à chaque fois du top left */
     clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
 
+    &__text-box {
+        width: 100%;
+        margin: 0 auto;
+    }
+
     &__logo-box {
         position: absolute;
         top: 4rem;

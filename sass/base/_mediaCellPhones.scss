@@ -1,0 +1,232 @@
+// mediaqueries
+
+// phones : screen < 600px
+// tablets : 500 px < screen < 1200px
+
+// Phones
+@media screen and (max-width: 600px) {
+    // ajustement de la taille de police de base pour tout le site
+    html {
+        font-size: clamp(1vw, 6px, 3vw);
+    }
+
+    // ** PARTIES COMMUNES **
+
+    // ajustement du header et du titre
+    .header {
+        height: 50vh;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+
+        &__logo-box {
+            top: 2rem;
+            left: 2rem;
+        }
+
+        &__logo {
+            height: 6rem;
+            width: auto;
+        }
+
+        .heading-primary {
+            margin-top: 15rem;
+            &--main {
+                font-size: clamp(3vw, 5rem, 8vw);
+                margin-bottom: 5rem;
+            }
+
+            &--sub {
+                font-size: clamp(1.5vw, 3rem, 6vw);
+            }
+        }
+    }
+
+    // ajustement du footer
+    footer.footer {
+        height: auto;
+
+        img {
+            height: clamp(8vw, 15rem, 18vw);
+        }
+
+        ul {
+            width: auto;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            width: 100%;
+            font-size: 1.4rem;
+
+            li {
+                margin: 0.5rem;
+            }
+        }
+    }
+
+    // ** PREMIERE PAGE **
+    // section favoris, ajustement des images et de l'ombre
+    .favorites {
+        width: 100%;
+        min-height: auto;
+        height: 140vh;
+        max-height: 140vh;
+
+        h2 {
+            margin-top: 3rem;
+            margin-bottom: 3rem;
+        }
+
+        &__display-box {
+            min-width: 90%;
+            height: 80%;
+            max-height: 100vh;
+
+            &--img {
+                width: 100%;
+                max-height: 50%;
+                min-height: 30%;
+                height: auto;
+                box-shadow: 3px 3px 20px $color-dark-blue;
+
+                &:nth-child(1) {
+                    top: 0;
+                    left: 0;
+                    z-index: 1;
+                }
+
+                &:nth-child(2) {
+                    top: 30%;
+                    left: 0;
+                    z-index: 2;
+                }
+
+                &:nth-child(3) {
+                    top: 60%;
+                    left: 0;
+                    z-index: 3;
+                }
+            }
+        }
+    }
+
+    // section recherche
+    .search {
+        margin-top: 5rem;
+        min-height: 180vh;
+        height: auto;
+        margin-top: 5rem;
+        padding-top: 5rem;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+
+        .search-box {
+            flex-direction: column;
+            width: 100%;
+            height: 15vh;
+            margin-top: 1rem;
+
+            &__input {
+                margin-bottom: 1rem;
+                width: 60%;
+            }
+
+            // on cache la box superflue en mobile
+            &__soon {
+                display: none;
+            }
+
+            &__deezer-button {
+                width: 7rem;
+                height: 7rem;
+            }
+        }
+
+        // albums deezer
+        .albums {
+            flex-direction: column;
+            justify-content: space-between;
+            flex-wrap: nowrap;
+            height: auto;
+            min-height: 100vh;
+            max-height: 200vh;
+            align-items: center;
+
+            &__card {
+                width: 80%;
+                max-height: 33%;
+                min-height: 40vh;
+                margin-bottom: 5rem;
+
+                img {
+                    height: 75%;
+                    min-height: 20vh;
+                }
+
+                h5 {
+                    font-size: 1.8rem;
+                }
+
+                audio {
+                    width: 80%;
+                    height: 3rem;
+                    max-height: 5%;
+                }
+            }
+        }
+    }
+
+    // ** DEUXIEME PAGE**
+
+    //section biographie
+    .biographySection {
+        height: auto;
+
+        h2 {
+            padding-top: 5rem;
+        }
+
+        &__favorites {
+            flex-wrap: wrap;
+        }
+    }
+
+    .displayBiography {
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        width: 100%;
+        align-items: center !important;
+
+        &__bandPicture {
+            min-width: 80%;
+            margin-bottom: 5rem;
+        }
+
+        &__biography {
+            min-width: 80%;
+        }
+    }
+
+    //section concerts
+    .concerts {
+        min-height: 100vh;
+        height: auto;
+        // annulation du polygone
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        // aération
+        margin-top: 5rem;
+        padding-top: 5rem;
+        overflow: auto;
+
+        // wrap sur les dates
+        &__dates {
+            flex-wrap: wrap;
+
+            div {
+                min-width: 40%;
+                max-height: 25%;
+
+                h3 {
+                    padding-bottom: 1rem;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}

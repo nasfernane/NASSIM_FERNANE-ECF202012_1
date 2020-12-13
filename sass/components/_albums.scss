@@ -9,6 +9,7 @@
 
     &__card {
         width: 20%;
+        min-width: 250px;
         height: 80%;
         border: 1px solid $color-light-grey;
         border-radius: 16px;

@@ -40,9 +40,6 @@
             border-radius: 1rem;
             border: 1px solid $color-dark-blue;
             background-color: $color-light-grey;
-
-            &::placeholder {
-            }
         }
 
         &__deezer-button {
@@ -51,7 +48,7 @@
             border-radius: 50%;
             background: url('../img/logoDeezer.png') center;
             background-size: cover;
-            border: 0;
+            border: 1px solid $color-light-grey;
         }
 
         &__soon {
